@@ -23,12 +23,12 @@ public class Prescription {
     private String medication;
 
     @NotNull(message = "Dosage is required")
+    @Size(min = 3, max = 20, message = "Dosage must be between 3 and 20 characters")
     private String dosage;
 
     @Size(max = 200, message = "Doctor notes cannot exceed 200 characters")
     private String doctorNotes;
 
-  
     // Constructors, getters, and setters
     public Prescription(String patientName, String medication, String dosage, String doctorNotes, Long appointmentId) {
         this.patientName = patientName;

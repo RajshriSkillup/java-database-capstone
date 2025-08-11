@@ -1,5 +1,6 @@
 // doctorServices.js
-const DOCTOR_API = '/doctor'
+import { API_BASE_URL } from "../config/config.js";
+const DOCTOR_API = API_BASE_URL + '/doctor'
 export async function getDoctors() {
     try {
       const response = await fetch(DOCTOR_API);

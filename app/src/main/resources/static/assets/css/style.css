@@ -1,3 +1,5 @@
+/* This is the style sheet for global change across the files. */
+
 /* style.css */
 .header {
     display: flex;
@@ -202,7 +204,7 @@
 
 
   .dashboard-btn{
-    width: 100%;
+    width: 30%;
   }
 
   .input-field {
@@ -377,3 +379,4 @@
   margin-right: 0.5rem;
   accent-color: #015c5db8; 
 }
+

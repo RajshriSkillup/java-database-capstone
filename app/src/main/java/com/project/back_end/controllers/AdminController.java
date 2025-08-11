@@ -32,15 +32,15 @@ public class AdminController {
     }
 
 
-    @GetMapping("/dashboard/{token}")
-    public String adminDashboard(@PathVariable String token)
-    {
-        Map<String, String> map=service.validateToken(token,"admin").getBody();
-        if(map==null)
-        {
-            return "admin/adminDashboard";
-        }
-        return "redirect:http://localhost:8080/"; 
+    // @GetMapping("/dashboard/{token}")
+    // public String adminDashboard(@PathVariable String token)
+    // {
+    //     Map<String, String> map=service.validateToken(token,"admin").getBody();
+    //     if(map==null)
+    //     {
+    //         return "admin/adminDashboard";
+    //     }
+    //     return "redirect:http://localhost:8080/"; 
         
-    }
+    // }
 }
